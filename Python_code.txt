@@ -1,0 +1,30 @@
+A =int(input('''Enter the starting of range : '''))
+B =int(input('''Enter the ending of range : '''))
+x=[]
+for list in range(A,B):
+    x.append(list)
+print(x)
+c=[]
+d=[]
+for a in x:
+    if a>10 and a%2==0:
+        c.append(a)
+    elif a>10 and a%3==0:
+        c.append(a)
+    elif a>10 and a%5==0:
+        c.append(a)
+    elif a>10 and a%7==0:
+        c.append(a)
+    elif a in [4,6,8,9,10]:
+        c.append(a)
+    
+    else:
+        d.append(a)
+        print(a,":IS A PRIME NUMBER")
+print(d) 
+print("NUMBER OF PRIME NUMBERS IN GIVEN RANGE ARE:",len(d))        
+print(c) 
+print("NUMBER OF COMPOSITE NUMBERS IN GIVEN RANGE ARE:",len(c))
+for y in c:
+    print("{} IS A COMPOSITE NUMBER".format(y))
+"C:\Users\Lenovo\OneDrive\Getting started with OneDrive.pdf"
